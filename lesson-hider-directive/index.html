@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="directivePractice">
+  <head>
+    <meta charset="utf-8">
+    <title>lessonHider</title>
+    <link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body ng-controller="LessonController">
+    <div class="">
+      Hello
+      {{name}}
+      how would you like a nice hot cup of:
+      <ul>
+          <lesson-hider ng-repeat="lesson in lessons" lesson="lesson" day-alert="announceDay(lesson, day)"></lesson-hider>
+      </ul>
+
+
+    </div>
+    <div class="">
+      {{test}}
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="LessonController.js"></script>
+    <script src="lessonService.js"></script>
+    <script src="lessonDirective.js"></script>
+  </body>
+</html>

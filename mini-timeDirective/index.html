@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="timeApp">
+  <head>
+    <meta charset="utf-8">
+    <title>mini-timeDirective</title>
+    <link rel="stylesheet" href="/css/master.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body ng-controller="MainController">
+    <div>
+      Hello, {{name}}!
+      <show-time format="ctrlFormat" update="updateFormat()"></show-time>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/mainCtrl.js"></script>
+    <script src="js/timeDirective.js"></script>
+  </body>
+</html>
